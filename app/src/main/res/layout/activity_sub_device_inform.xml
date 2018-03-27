@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/tittleView"
+        style="@style/TittleBar">
+
+        <LinearLayout
+            android:id="@+id/tittleBack"
+            style="@style/Tittle_Left_Iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp25"
+                android:src="@drawable/back" />
+
+            <TextView
+                style="@style/TittleLeftText"
+                android:text="@string/back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tittleText"
+            style="@style/Tittle_Center_Text"
+            android:text="@string/zone" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Liner"
+                android:layout_marginTop="@dimen/dp10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:background="@drawable/ll_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:src="@drawable/test" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_weight="1"
+                    android:text="@string/zone_alias"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/zone_alias"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:text="@string/zone"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="11dp"
+                    android:layout_height="@dimen/dp15"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+
+            <TextView style="@style/Liner" />
+
+            <TextView
+                style="@style/Liner"
+                android:layout_marginTop="@dimen/dp10" />
+
+            <LinearLayout
+                android:id="@+id/ll_alias"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:background="@drawable/ll_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:src="@drawable/test" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_weight="1"
+                    android:text="@string/zone_number"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_zone_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:text="007"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/Liner"
+                android:layout_marginLeft="@dimen/dp15" />
+
+            <LinearLayout
+                android:id="@+id/ll_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:background="@drawable/ll_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:src="@drawable/test" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_weight="1"
+                    android:text="@string/zone_type"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/zone_type"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="leixing"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="11dp"
+                    android:layout_height="@dimen/dp15"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+
+            <TextView style="@style/Liner" />
+
+            <TextView
+                style="@style/Liner"
+                android:layout_marginTop="@dimen/dp10" />
+
+            <LinearLayout
+                android:id="@+id/ll_type01"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:background="@drawable/ll_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:src="@drawable/test" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_weight="1"
+                    android:text="@string/zone_bypass"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+
+                <com.host.gp50.app.ui.view.SwitchView
+                    android:id="@+id/sw01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Liner"
+                android:layout_marginLeft="@dimen/dp15" />
+
+            <LinearLayout
+                android:id="@+id/ll_type02"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:background="@drawable/ll_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:src="@drawable/test" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_weight="1"
+                    android:text="@string/zone_welcome"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+
+                <com.host.gp50.app.ui.view.SwitchView
+                    android:id="@+id/sw02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Liner"
+                android:layout_marginLeft="@dimen/dp15" />
+
+            <LinearLayout
+                android:id="@+id/ll_type03"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:background="@drawable/ll_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:src="@drawable/test" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_weight="1"
+                    android:text="@string/zone_monitor"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+
+                <com.host.gp50.app.ui.view.SwitchView
+                    android:id="@+id/sw03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <TextView style="@style/Liner" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/dp20"
+        android:layout_height="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp10"
+        android:paddingTop="@dimen/dp3"
+        android:src="@drawable/triangle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp5"
+        android:background="@drawable/pop_back_shape"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp5"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingTop="@dimen/dp5"
+            android:text="@string/pop_tittle"
+            android:textColor="@color/text_color"
+            android:textSize="16sp" />
+
+        <TextView style="@style/Liner" />
+
+        <ListView
+            android:id="@+id/lv_pop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView style="@style/Liner" />
+
+        <LinearLayout
+            android:id="@+id/ll_pop_add_device"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bottom_selector"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp20"
+                android:layout_height="@dimen/dp20"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp10"
+                android:src="@drawable/add_host" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:text="@string/pop_bottom"
+                android:textColor="@color/text_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

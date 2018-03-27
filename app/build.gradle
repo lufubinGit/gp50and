@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+android {
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.host.gp50.app"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // 保证其他的lib没有被preDex
+    dexOptions {
+        preDexLibraries = false
+    }
+}
+
+greendao {
+    schemaVersion 1  //数据库版本号 每次升级数据库都需要改变版本，只能增加
+    daoPackage 'com.host.gp50.app.greendao.gen'   //设置DaoMaster、DaoSession、Dao包名
+    targetGenDir 'src/main/java'    //设置DaoMaster、DaoSession、Dao目录
+
+//targetGenDirTest：设置生成单元测试目录
+
+//generateTests：设置自动生成单元测试用例
+
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.4.0'
+    compile 'com.android.support:design:25.4.0'
+    compile 'com.android.support:recyclerview-v7:25.4.0'
+    compile 'com.android.support:cardview-v7:25.4.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //greendao
+    compile 'org.greenrobot:greendao:3.2.2'
+    compile 'org.greenrobot:greendao-generator:3.2.2'
+    compile files('libs/Amap_2DMap_V5.2.0_20170627.jar')
+    compile files('libs/AMap_Search_V5.5.0_20171107.jar')
+    compile files('libs/Android_Map3D_SDK_V5.6.0_20171128.jar')
+    compile files('libs/EventBus-2.4.2.jar')
+    compile files('libs/AMap_Location_V3.7.0_20171218.jar')
+    compile files('libs/zxing.jar')
+    //okGo
+    compile 'com.lzy.net:okgo:2.0.0'
+    //可以单独使用，不需要依赖下方的扩展包
+    compile 'com.lzy.net:okrx:0.1.0'
+    //RxJava扩展支持，根据需要添加
+    compile 'com.lzy.net:okserver:1.1.0'
+    compile 'com.alibaba:fastjson:1.2.21'
+    compile files('libs/gson-2.2.1.jar')
+    // MultiDex的依赖
+    compile 'com.android.support:multidex:1.0.3'
+}

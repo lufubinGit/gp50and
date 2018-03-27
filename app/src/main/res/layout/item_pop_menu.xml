@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ll_press"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dp3"
+    android:paddingRight="@dimen/dp3"
+    android:paddingTop="@dimen/dp5"
+    android:paddingBottom="@dimen/dp5">
+
+    <ImageView
+        android:id="@+id/iv_host"
+        android:layout_width="@dimen/dp35"
+        android:layout_height="@dimen/dp35"
+        android:layout_marginLeft="@dimen/dp5"
+        android:src="@drawable/comui_tab_home_selected" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp5"
+        android:layout_marginRight="@dimen/dp5"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_host_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="主机名字"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_host_id"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dp3"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+            android:text="主机名字"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_event"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:src="@drawable/round_red"
+        android:layout_marginRight="@dimen/dp5"/>
+
+</LinearLayout>

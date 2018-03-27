@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:background="@drawable/dialog_first_back"
+        android:gravity="center"
+        android:text="@string/tips"
+        android:textColor="@color/text_color" />
+
+    <TextView style="@style/Liner" />
+
+    <TextView
+        android:id="@+id/tv_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="当前设备没有地址，将使用当前用户地址作为设备地址。"
+        android:textColor="@color/theme"
+        android:paddingTop="@dimen/dp15"
+        android:paddingBottom="@dimen/dp15"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        />
+
+    <TextView style="@style/Liner" />
+
+
+    <TextView
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:background="@drawable/dialog_last_back"
+        android:gravity="center"
+        android:text="@string/confirm"
+        android:textColor="@color/red" />
+
+</LinearLayout>

@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/tittleView"
+        style="@style/TittleBar">
+
+        <LinearLayout
+            android:id="@+id/tittleBack"
+            style="@style/Tittle_Left_Iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp25"
+                android:src="@drawable/back" />
+
+            <TextView
+                style="@style/TittleLeftText"
+                android:gravity="center_vertical"
+                android:text="@string/back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tittleText"
+            style="@style/Tittle_Center_Text"
+            android:text="@string/PGM" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            style="@style/TittleRightText"
+            android:text="@string/save" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:background="@color/theme"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp10"
+                    android:text="@string/pgm_time"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/tv_second"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dialog_back"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="2222"
+                    android:textColor="@color/theme" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp3"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:text="@string/second"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:background="@color/theme"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp10"
+                    android:text="@string/open_pgm"
+                    android:textColor="@color/white" />
+
+                <com.host.gp50.app.ui.view.SwitchView
+                    android:id="@+id/sw"
+                    android:layout_width="@dimen/dp40"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingTop="@dimen/dp5"
+                    android:text="@string/pgm_set_des"
+                    android:textColor="@color/theme" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ll_press"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_weight="1"
+                        android:paddingBottom="@dimen/dp15"
+                        android:paddingTop="@dimen/dp15"
+                        android:text="@string/arm_away"
+                        android:textColor="@color/text_color" />
+
+                    <com.host.gp50.app.ui.view.SwitchView
+                        android:id="@+id/sw01"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp20" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@drawable/ll_press"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_weight="1"
+                        android:paddingBottom="@dimen/dp15"
+                        android:paddingTop="@dimen/dp15"
+                        android:text="@string/arm_stay"
+                        android:textColor="@color/text_color" />
+
+                    <com.host.gp50.app.ui.view.SwitchView
+                        android:id="@+id/sw02"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp20" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@drawable/ll_press"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_weight="1"
+                        android:paddingBottom="@dimen/dp15"
+                        android:paddingTop="@dimen/dp15"
+                        android:text="@string/dis_arm"
+                        android:textColor="@color/text_color" />
+
+                    <com.host.gp50.app.ui.view.SwitchView
+                        android:id="@+id/sw03"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp20" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@drawable/ll_press"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_weight="1"
+                        android:paddingBottom="@dimen/dp15"
+                        android:paddingTop="@dimen/dp15"
+                        android:text="@string/follow_siren"
+                        android:textColor="@color/text_color" />
+
+                    <com.host.gp50.app.ui.view.SwitchView
+                        android:id="@+id/sw04"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp20" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@drawable/ll_press"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_weight="1"
+                        android:paddingBottom="@dimen/dp15"
+                        android:paddingTop="@dimen/dp15"
+                        android:text="@string/pgm_alarm01"
+                        android:textColor="@color/text_color" />
+
+                    <com.host.gp50.app.ui.view.SwitchView
+                        android:id="@+id/alarm_sw01"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp20" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@drawable/ll_press"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_weight="1"
+                        android:paddingBottom="@dimen/dp15"
+                        android:paddingTop="@dimen/dp15"
+                        android:text="@string/pgm_alarm02"
+                        android:textColor="@color/text_color" />
+
+                    <com.host.gp50.app.ui.view.SwitchView
+                        android:id="@+id/alarm_sw02"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp20" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@drawable/ll_press"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_weight="1"
+                        android:paddingBottom="@dimen/dp15"
+                        android:paddingTop="@dimen/dp15"
+                        android:text="@string/pgm_alarm03"
+                        android:textColor="@color/text_color" />
+
+                    <com.host.gp50.app.ui.view.SwitchView
+                        android:id="@+id/alarm_sw03"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp20" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@drawable/ll_press"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_weight="1"
+                        android:paddingBottom="@dimen/dp15"
+                        android:paddingTop="@dimen/dp15"
+                        android:text="@string/pgm_alarm04"
+                        android:textColor="@color/text_color" />
+
+                    <com.host.gp50.app.ui.view.SwitchView
+                        android:id="@+id/alarm_sw04"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp20" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@drawable/ll_press"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_weight="1"
+                        android:paddingBottom="@dimen/dp15"
+                        android:paddingTop="@dimen/dp15"
+                        android:text="@string/pgm_alarm05"
+                        android:textColor="@color/text_color" />
+
+                    <com.host.gp50.app.ui.view.SwitchView
+                        android:id="@+id/alarm_sw05"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp20" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@drawable/ll_press"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_weight="1"
+                        android:paddingBottom="@dimen/dp15"
+                        android:paddingTop="@dimen/dp15"
+                        android:text="@string/pgm_alarm06"
+                        android:textColor="@color/text_color" />
+
+                    <com.host.gp50.app.ui.view.SwitchView
+                        android:id="@+id/alarm_sw06"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp20" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@drawable/ll_press"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_weight="1"
+                        android:paddingBottom="@dimen/dp15"
+                        android:paddingTop="@dimen/dp15"
+                        android:text="@string/pgm_alarm07"
+                        android:textColor="@color/text_color" />
+
+                    <com.host.gp50.app.ui.view.SwitchView
+                        android:id="@+id/alarm_sw07"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp20" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@drawable/ll_press"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_weight="1"
+                        android:paddingBottom="@dimen/dp15"
+                        android:paddingTop="@dimen/dp15"
+                        android:text="@string/pgm_alarm08"
+                        android:textColor="@color/text_color" />
+
+                    <com.host.gp50.app.ui.view.SwitchView
+                        android:id="@+id/alarm_sw08"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp20" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:id="@+id/tittleView"
+        style="@style/TittleBar">
+
+        <LinearLayout
+            android:id="@+id/tittleBack"
+            style="@style/Tittle_Left_Iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp25"
+                android:src="@drawable/back" />
+
+            <TextView
+                style="@style/TittleLeftText"
+                android:text="返回" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Tittle_Center_Text"
+            android:text="@string/register" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="@drawable/edit_text_back"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/dp10"
+            android:src="@drawable/icon_user" />
+
+        <com.host.gp50.app.ui.view.ClearEditText
+            android:id="@+id/etUserName"
+            style="@style/EditText"
+            android:hint="@string/hint_user_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp15"
+        android:background="@drawable/edit_text_back"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/dp10"
+            android:src="@drawable/icon_password" />
+
+        <com.host.gp50.app.ui.view.ClearEditText
+            android:id="@+id/etPassword"
+            style="@style/EditText"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp15"
+        android:background="@drawable/edit_text_back"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/dp10"
+            android:src="@drawable/icon_password" />
+
+        <com.host.gp50.app.ui.view.ClearEditText
+            android:id="@+id/etPassword02"
+            style="@style/EditText"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/dp10"
+        android:padding="@dimen/dp10"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*注册之后，用户名不能更改"/>
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/btn_select"
+        android:text="@string/register"
+        android:textColor="@color/white" />
+</LinearLayout>

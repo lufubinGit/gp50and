@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:id="@+id/tittleView"
+        style="@style/TittleBar">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/tittleBack"
+            style="@style/Tittle_Left_Iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp25"
+                android:src="@drawable/back" />
+
+            <TextView
+                style="@style/TittleLeftText"
+                android:gravity="center_vertical"
+                android:text="@string/back" />
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/Tittle_Center_Text"
+            android:text="@string/user_login" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="@drawable/edit_text_back"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/dp10"
+            android:src="@drawable/icon_user" />
+
+        <com.host.gp50.app.ui.view.ClearEditText
+            android:id="@+id/etUserName"
+            style="@style/EditText"
+            android:hint="@string/hint_user_name"
+            android:text="zhang147"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp15"
+        android:background="@drawable/edit_text_back"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/dp10"
+            android:src="@drawable/icon_password" />
+
+        <com.host.gp50.app.ui.view.ClearEditText
+            android:id="@+id/etPassword"
+            style="@style/EditText"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:text="123456"/>
+
+        <ImageView
+            android:id="@+id/iv_password_show"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="@dimen/dp10"
+            android:src="@drawable/password_close" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp30"
+        android:background="@drawable/btn_select"
+        android:text="@string/user_login"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10">
+
+        <TextView
+            android:id="@+id/tv_losePw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/user_forget_password"
+            android:textColor="@color/text_color_press_select"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_register_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/user_registered"
+            android:textColor="@color/them_color_press_select"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</LinearLayout>

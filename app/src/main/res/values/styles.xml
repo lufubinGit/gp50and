@@ -1,0 +1,144 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Liner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/liner</item>
+    </style>
+
+    <style name="Tittle_Left_Iv">
+        <item name="android:layout_width">@dimen/dp25</item>
+        <item name="android:layout_height">@dimen/dp25</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">@dimen/dp15</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Tittle_Right_Iv">
+        <item name="android:layout_width">@dimen/dp25</item>
+        <item name="android:layout_height">@dimen/dp25</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/dp15</item>
+    </style>
+
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/pop_show</item>
+        <item name="android:windowExitAnimation">@anim/pop_hide</item>
+    </style>
+
+    <style name="TittleLeftText">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/ll_press</item>
+    </style>
+
+    <style name="QMUI.TipDialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="TittleBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp40</item>
+        <item name="android:background">@color/theme</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Tittle_Center_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dp25</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="EditText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/dp5</item>
+        <item name="android:layout_marginRight">@dimen/dp5</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:padding">@dimen/dp5</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textColorHint">#d0d0d0</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!--dialog从底部弹出-->
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/anim_y_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_y_out</item>
+    </style>
+
+
+    <!--dialog从底部弹出-->
+    <style name="CenterDialogStyle" parent="@android:style/Theme.Dialog">
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+
+    </style>
+
+    <style name="TittleRightText">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dp25</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/dp15</item>
+        <item name="android:textColor">@color/ll_press</item>
+    </style>
+
+    <!--************ QMUILoading ***********-->
+    <declare-styleable name="QMUILoadingView">
+        <attr name="qmui_loading_view_size" format="dimension"/>
+        <attr name="android:color"/>
+    </declare-styleable>
+    <attr name="QMUILoadingStyle" format="reference"/>
+
+</resources>

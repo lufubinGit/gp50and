@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/tittleView"
+        style="@style/TittleBar">
+
+        <LinearLayout
+            android:id="@+id/tittleBack"
+            style="@style/Tittle_Left_Iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp25"
+                android:src="@drawable/back" />
+
+            <TextView
+                style="@style/TittleLeftText"
+                android:gravity="center_vertical"
+                android:text="@string/back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tittleText"
+            style="@style/Tittle_Center_Text"
+            android:text="@string/set_sms" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:text="@string/save"
+            style="@style/TittleRightText" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/liner" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp3"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingTop="@dimen/dp10"
+        android:text="@string/set_alias"
+        android:textColor="@color/text_color" />
+
+    <EditText
+        android:id="@+id/sms_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:maxLines="1"
+        android:padding="@dimen/dp10"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/liner" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp3"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingTop="@dimen/dp10"
+        android:text="@string/modify_number"
+        android:textColor="@color/text_color" />
+
+    <EditText
+        android:id="@+id/sms_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:digits="0123456789-"
+        android:inputType="phone"
+        android:padding="@dimen/dp10"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/liner" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/dp15"
+            android:paddingTop="@dimen/dp15"
+            android:text="@string/sms_type01"
+            android:textColor="@color/text_color" />
+
+        <com.host.gp50.app.ui.view.SwitchView
+            android:id="@+id/sms01"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dp20"
+            app:primaryColor="@color/theme"
+            app:primaryColorDark="@color/theme" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/liner" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/dp15"
+            android:paddingTop="@dimen/dp15"
+            android:text="@string/sms_type02"
+            android:textColor="@color/text_color" />
+
+        <com.host.gp50.app.ui.view.SwitchView
+            android:id="@+id/sms02"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dp20"
+            app:primaryColor="@color/theme"
+            app:primaryColorDark="@color/theme" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/liner" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/dp15"
+            android:paddingTop="@dimen/dp15"
+            android:text="@string/sms_type03"
+            android:textColor="@color/text_color" />
+
+        <com.host.gp50.app.ui.view.SwitchView
+            android:id="@+id/sms03"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dp20"
+            app:primaryColor="@color/theme"
+            app:primaryColorDark="@color/theme" />
+    </LinearLayout>
+</LinearLayout>

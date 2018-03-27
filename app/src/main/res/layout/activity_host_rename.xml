@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/tittleView"
+        style="@style/TittleBar">
+
+        <LinearLayout
+            android:id="@+id/tittleBack"
+            style="@style/Tittle_Left_Iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp25"
+                android:src="@drawable/back" />
+
+            <TextView
+                style="@style/TittleLeftText"
+                android:text="@string/back"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tittleText"
+            style="@style/Tittle_Center_Text"
+            android:text="@string/user_login" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="@drawable/edit_text_back"
+        android:orientation="horizontal">
+
+        <com.host.gp50.app.ui.view.ClearEditText
+            android:id="@+id/etHostAlias"
+            style="@style/EditText"
+            android:hint="@string/hint_device_alias" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp30"
+        android:background="@drawable/btn_select"
+        android:text="@string/save"
+        android:textColor="@color/white" />
+</LinearLayout>

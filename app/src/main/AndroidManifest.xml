@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.host.gp50.app">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".ui.activity.LauncherActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.SplashActivity"/>
+        <activity android:name=".ui.activity.MainActivity" android:launchMode="singleTask"/>
+        <activity android:name=".ui.activity.device.HostSettingActivity"/>
+        <activity android:name=".ui.activity.user.UserCenterActivity"/>
+        <activity android:name=".ui.activity.user.UserLoginActivity"/>
+        <activity android:name=".ui.activity.user.UserRegisterByEmailActivity"/>
+        <activity android:name=".ui.activity.user.UserRegisterByNormalActivity"/>
+        <activity android:name=".ui.activity.user.UserRegisterByPhoneActivity"/>
+        <activity android:name=".ui.activity.device.HostRenameActivity"/>
+        <activity android:name=".ui.activity.device.sub.ShowSubDeviceActivity"/>
+        <activity android:name=".ui.activity.device.HostServiceProviderActivity"/>
+        <activity android:name=".ui.activity.device.sub.SubDeviceInformActivity"/>
+        <activity android:name=".ui.activity.others.AboutActivity"/>
+        <activity android:name=".ui.activity.others.PrivacyPolicyActivity"/>
+        <activity android:name=".ui.activity.device.sub.SetZoneTypeActivity"/>
+        <activity android:name=".ui.activity.device.HostAddressActivity"/>
+        <activity android:name=".ui.activity.user.UserQrCodeActivity"/>
+        <activity android:name=".ui.activity.device.HostPhoneActivity"/>
+        <activity android:name=".ui.activity.device.HostSmsActivity"/>
+        <activity android:name=".ui.activity.device.HostTimingPlanActivity"/>
+        <activity android:name=".ui.activity.device.SetPhoneActivity"/>
+        <activity android:name=".ui.activity.device.SetSmsActivity"/>
+        <activity android:name=".ui.activity.device.SetWeekActivity"/>
+        <activity android:name=".ui.activity.device.HostPgmSetActivity"/>
+        <activity android:name=".ui.activity.device.HistoryActivity"/>
+        <activity android:name=".ui.activity.device.AddDeviceActivity"/>
+        <activity android:name="com.zxing.CaptureActivity"/>
+
+        <service android:name=".ui.service.MySocketService">
+            <intent-filter android:priority="1000">
+                <action android:name="com.host.gp50.app.ui.service.MySocketService" />
+            </intent-filter>
+        </service>
+
+        <!--高德地图peiz-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="167acaefcaebfdfde4081ab955f721f7"/>
+    </application>
+
+</manifest>

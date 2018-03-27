@@ -1,0 +1,235 @@
+<resources>
+    <string name="app_name">GP50</string>
+
+    <string name="device">设备</string>
+    <string name="user">用户</string>
+    <string name="dis_arm">撤防</string>
+    <string name="arm_stay">留守布防</string>
+    <string name="arm_away">外出布防</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="confirm">确认</string>
+    <string name="save">保存</string>
+    <string name="back">返回</string>
+    <string name="second">秒</string>
+    <string name="online">上线</string>
+    <string name="offline">离线</string>
+
+    <!--hint-->
+    <string name="hint_user_name">请输入用户名</string>
+    <string name="hint_password">请输入密码</string>
+    <string name="hint_verify">请输入验证码</string>
+    <string name="hint_device_alias">请设置主机别名</string>
+    <string name="hint_add_device">请输入主机ID</string>
+
+    <!--Toast-->
+    <string name="toast_no_empty_username_password">用户名或者密码不能为空</string>
+    <string name="toast_twice_password_different">两次输入的密码不一样</string>
+    <string name="toast_camera_error">相机打开出错，请稍后重试</string>
+    <string name="toast_sure_back">再次点击可以退出程序</string>
+    <string name="toast_no_host_id">请输入主机ID</string>
+
+    <!--dialog-->
+    <string name="call">呼叫</string>
+    <string name="loading">正在加载</string>
+    <string name="process">正在处理</string>
+    <string name="success">成功</string>
+    <string name="fail">失败</string>
+    <string name="loading_success">加载成功</string>
+    <string name="login_success">登录成功</string>
+    <string name="register_success">注册成功</string>
+    <string name="add_success">增加成功</string>
+    <string name="edit_success">编辑成功</string>
+    <string name="opt_success">操作成功</string>
+    <string name="loading_fail">加载失败</string>
+    <string name="login_fail">登录失败</string>
+    <string name="register_fail">注册失败</string>
+    <string name="add_fail">增加失败</string>
+    <string name="location_fail">定位失败</string>
+    <string name="tips">提示</string>
+    <string name="use_new_address">使用新地址</string>
+    <string name="take_photo">拍照</string>
+    <string name="choose_from_albums">从相册中选择</string>
+
+    <!--用户登录与注册-->
+    <string name="user_login">登录</string>
+    <string name="user_forget_password">忘记密码</string>
+    <string name="user_registered">立即注册</string>
+    <string name="user_choose_register">请选择注册方式</string>
+    <string name="user_registered_normal">普通注册</string>
+    <string name="user_registered_phone">手机注册</string>
+    <string name="user_registered_email">邮箱注册</string>
+    <string name="user_get_verify_code">获取验证码</string>
+    <string name="register">注册</string>
+
+    <!--设备Fragment-->
+    <string name="look">查看</string>
+    <string name="share">分享</string>
+    <string name="delete">删除</string>
+    <string name="sub_number">防区数量：</string>
+    <string name="user_number">当前拥有权限人数：</string>
+    <string name="share_desc">将此设备分享给其他人使用</string>
+    <string name="delete_desc">不再观察此设备</string>
+    <string name="no_device_desc">该账号没有绑定设备，请点击下面的添加按钮添加设备。</string>
+    
+    <!--添加设备-->
+    <string name="add">添加</string>
+    
+    <!--历史记录-->
+    <string name="history">历史记录</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">释放立即刷新</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">加载更多</string>
+    <string name="xlistview_footer_hint_ready">释放加载更多</string>
+
+    <!--用户Fragment-->
+    <string name="alias">名称:</string>
+    <string name="user_name">用户名:</string>
+    <string name="about">关于</string>
+    <string name="set">设置</string>
+    <string name="notify">通知</string>
+
+    <!--其他界面-->
+    <string name="version">版本号:</string>
+    <string name="privacy">隐私政策</string>
+    <string name="check_version">检查更新</string>
+    <string name="can_not_find_version_name">无法获取版本号</string>
+
+    <!--主界面PopWindow-->
+    <string name="pop_tittle">切换主机</string>
+    <string name="pop_bottom">添加主机</string>
+
+    <!--主机设置-->
+    <string name="device_alias">设备别名</string>
+    <string name="phone_number">语音电话号码</string>
+    <string name="sms_number">短信电话号码</string>
+    <string name="PGM">PGM</string>
+    <string name="auto_arm">自动布撤防</string>
+    <string name="sub_user">子用户</string>
+    <string name="service_provider">服务商</string>
+    <string name="device_address">设备地址</string>
+    <string name="device_IP">设备外部地址</string>
+    <string name="device_ID">设备ID</string>
+    <string name="device_version">设备版本</string>
+
+    <!--短信报警电话和语音报警电话-->
+    <string name="set_phone">语音号码设置</string>
+    <string name="set_sms">短信号码设置</string>
+    <string name="sms_type01">布撤防</string>
+    <string name="sms_type02">报警</string>
+    <string name="sms_type03">故障</string>
+    <string name="set_alias">设置别名</string>
+    <string name="modify_number">修改号码</string>
+
+    <!--PGM设置-->
+    <string name="pgm_time">PGM输出时间</string>
+    <string name="open_pgm">启用PGM</string>
+    <string name="pgm_set_des">设置PGM触发条件</string>
+    <string name="follow_siren">警号跟随</string>
+    <string name="pgm_alarm01">出入防区报警</string>
+    <string name="pgm_alarm02">活动防区报警</string>
+    <string name="pgm_alarm03">周边防区报警</string>
+    <string name="pgm_alarm04">求助防区报警</string>
+    <string name="pgm_alarm05">火警防区报警</string>
+    <string name="pgm_alarm06">煤气防区报警</string>
+    <string name="pgm_alarm07">防拆防区报警</string>
+    <string name="pgm_alarm08">挟持防区报警</string>
+
+
+    <!--主机服务商-->
+    <string name="map">地图</string>
+    <string name="maintain_location">最近维护地点</string>
+    <string name="contact_sales">联系售后</string>
+    <string name="feedback">反馈</string>
+    <string name="check_map">查看地图</string>
+    <string name="change_service_provider">切换服务商</string>
+
+    <!--用户中心-->
+    <string name="user_center">用户中心</string>
+    <string name="user_alias">用户名称:</string>
+    <string name="user_qr">用户二维码</string>
+    <string name="user_id">用户ID</string>
+    <string name="user_phone">用户手机号码</string>
+    <string name="user_email">用户邮箱号码</string>
+    <string name="user_modify_pw">修改密码</string>
+    <string name="user_change">切换用户</string>
+    <string name="user_logout">注销</string>
+    <string name="user_qr_code">我的二维码</string>
+    <string name="user_accept_share">您可以通过此二维码接受其他用户分享</string>
+
+    <!--防区-->
+    <string name="zone">防区</string>
+    <string name="zone_alias">防区别名</string>
+    <string name="zone_number">防区编号</string>
+    <string name="zone_type">防区类型</string>
+    <string name="zone_bypass">防区旁路</string>
+    <string name="zone_monitor">防区监控</string>
+    <string name="zone_welcome">迎宾防区</string>
+
+    <!--防区类型-->
+    <string name="set_type">防区类型设置</string>
+    <string name="zone_type01">出入类型</string>
+    <string name="zone_type02">活动类型</string>
+    <string name="zone_type03">周边类型</string>
+    <string name="zone_type04">求助类型</string>
+    <string name="zone_type05">火警类型</string>
+    <string name="zone_type06">煤气类型</string>
+    <string name="zone_type07">防拆类型</string>
+    <string name="zone_type08">挟持类型</string>
+
+    <!--星期-->
+    <string name="xingqi01">周一</string>
+    <string name="xingqi02">周二</string>
+    <string name="xingqi03">周三</string>
+    <string name="xingqi04">周四</string>
+    <string name="xingqi05">周五</string>
+    <string name="xingqi06">周六</string>
+    <string name="xingqi07">周日</string>
+
+    <!--ErrorCode-->
+    <string name="ErrorCode01">密码错误！</string>
+    <string name="ErrorCode02">参数格式错误！</string>
+    <string name="ErrorCode03">有警情发生，不能布防，请先撤防！</string>
+    <string name="ErrorCode04">编程状态，不能布防或撤防！</string>
+    <string name="ErrorCode05">有防区触发,不能布防！</string>
+    <string name="ErrorCode06">当前已经是外出布防！</string>
+    <string name="ErrorCode07">当前已经是留守布防！</string>
+    <string name="ErrorCode08">编程状态，不能远程设置！</string>
+    <string name="ErrorCode09">布防状态，不能远程设置，请先将所有的分区撤防！</string>
+    <string name="ErrorCode10">没有未使用的防区!</string>
+    <string name="ErrorCode11">当前状态不能布防！</string>
+    <string name="ErrorCode12">当前状态不能撤防！</string>
+    <string name="ErrorCode13">正在外出延时,不能布防，请先撤防！</string>
+
+    <!--CID-->
+    <string name="opt_num00">主机操作</string>
+    <string name="opt_num01">主用户密码操作</string>
+    <string name="opt_num02">编程密码操作</string>
+    <string name="opt_num03">挟持密码操作</string>
+    <string name="opt_num04">临时用户操作</string>
+    <string name="opt_num05_08">用户%1$d操作</string>
+    <string name="opt_num11_18">第%1$d个遥控器操作</string>
+    <string name="opt_num21_24">第%1$d组电话操作</string>
+    <string name="opt_num30">自动布撤防操作</string>
+    <string name="opt_num50">APP操作</string>
+    <string name="cid_code01">出入报警</string>
+    <string name="cid_code02">活动报警</string>
+    <string name="cid_code03">周边报警</string>
+    <string name="cid_code04">求助报警</string>
+    <string name="cid_code05">火警报警</string>
+    <string name="cid_code06">煤气报警</string>
+    <string name="cid_code07">防拆报警</string>
+    <string name="cid_code08">挟持报警</string>
+    <string name="cid_code09">交流掉电</string>
+    <string name="cid_code10">电池欠压</string>
+    <string name="cid_code11">电池电压低</string>
+    <string name="cid_code12">探测器丢失</string>
+    <string name="cid_code13">自动布防失败</string>
+    <string name="cid_code14">旁路</string>
+    <string name="cid_code15">周期测试报告</string>
+    <string name="cid_code16">进入编程</string>
+    <string name="cid_code17">退出编程</string>
+    <string name="cid_code18">电话掉线</string>
+</resources>

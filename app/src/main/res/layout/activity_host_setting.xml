@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/tittleView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:background="@color/theme"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/tittleBack"
+            style="@style/Tittle_Left_Iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp25"
+                android:src="@drawable/back" />
+
+            <TextView
+                style="@style/TittleLeftText"
+                android:text="@string/back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/set"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Liner"
+                android:layout_marginTop="@dimen/dp10" />
+
+            <LinearLayout
+                android:id="@+id/ll_device_alias"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:background="@drawable/ll_press"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:background="@drawable/comui_tab_home_selected" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:maxWidth="@dimen/dp200"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/device_alias"
+                    android:textColor="@color/text_color" />
+
+                <TextView
+                    android:id="@+id/tv_device_alias"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:maxLines="1"
+                    android:text="主机别名"
+                    android:textColor="@color/liner" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp15"
+                    android:layout_height="@dimen/dp15"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+
+            <TextView style="@style/Liner" />
+
+            <TextView
+                style="@style/Liner"
+                android:layout_marginTop="@dimen/dp15" />
+
+            <LinearLayout
+                android:id="@+id/ll_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:background="@drawable/ll_press"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:background="@drawable/host_phone_number" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:maxWidth="@dimen/dp200"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/phone_number"
+                    android:textColor="@color/text_color" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/dp15"
+                    android:layout_height="@dimen/dp15"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Liner"
+                android:layout_marginLeft="@dimen/dp10" />
+
+            <LinearLayout
+                android:id="@+id/ll_sms_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:background="@drawable/ll_press"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:background="@drawable/host_sms_number" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:maxWidth="@dimen/dp200"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/sms_number"
+                    android:textColor="@color/text_color" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/dp15"
+                    android:layout_height="@dimen/dp15"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Liner"
+                android:layout_marginLeft="@dimen/dp10" />
+
+            <LinearLayout
+                android:id="@+id/ll_pgm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:background="@drawable/ll_press"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:background="@drawable/host_pgm" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:maxWidth="@dimen/dp200"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/PGM"
+                    android:textColor="@color/text_color" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/dp15"
+                    android:layout_height="@dimen/dp15"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Liner"
+                android:layout_marginLeft="@dimen/dp10" />
+
+            <LinearLayout
+                android:id="@+id/ll_auto_arm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:background="@drawable/ll_press"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:background="@drawable/host_auto" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:maxWidth="@dimen/dp200"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/auto_arm"
+                    android:textColor="@color/text_color" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp15"
+                    android:layout_height="@dimen/dp15"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Liner"
+                android:layout_marginLeft="@dimen/dp10" />
+
+            <LinearLayout
+                android:id="@+id/ll_sub_user"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:background="@drawable/ll_press"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:background="@drawable/host_users" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:maxWidth="@dimen/dp200"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/sub_user"
+                    android:textColor="@color/text_color" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp15"
+                    android:layout_height="@dimen/dp15"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+
+            <TextView style="@style/Liner" />
+
+
+            <TextView
+                style="@style/Liner"
+                android:layout_marginTop="@dimen/dp15" />
+
+            <LinearLayout
+                android:id="@+id/ll_service_provider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ll_press"
+                android:minHeight="@dimen/dp50"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:background="@drawable/host_service" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:maxWidth="@dimen/dp200"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/service_provider"
+                    android:textColor="@color/text_color" />
+
+
+                <TextView
+                    android:id="@+id/tv_device_service_provider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:text="主机别名"
+                    android:textColor="@color/liner" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp15"
+                    android:layout_height="@dimen/dp15"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Liner"
+                android:layout_marginLeft="@dimen/dp10" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:id="@+id/ll_device_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ll_press"
+                android:minHeight="@dimen/dp50"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:background="@drawable/host_address" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:maxWidth="@dimen/dp200"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/device_address"
+                    android:textColor="@color/text_color" />
+
+                <TextView
+                    android:id="@+id/tv_device_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:text=""
+                    android:textColor="@color/liner" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp15"
+                    android:layout_height="@dimen/dp15"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Liner"
+                android:layout_marginLeft="@dimen/dp10" />
+
+            <LinearLayout
+                android:id="@+id/ll_device_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:background="@drawable/ll_press"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:background="@drawable/host_id" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:maxWidth="@dimen/dp200"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/device_ID"
+                    android:textColor="@color/text_color" />
+
+                <TextView
+                    android:id="@+id/tv_device_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="主机别名"
+                    android:textColor="@color/liner" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/Liner"
+                android:layout_marginLeft="@dimen/dp10" />
+
+            <LinearLayout
+                android:id="@+id/ll_device_ip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:background="@drawable/ll_press"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:background="@drawable/host_ip" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:maxWidth="@dimen/dp200"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/device_IP"
+                    android:textColor="@color/text_color" />
+
+                <TextView
+                    android:id="@+id/tv_device_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/liner" />
+
+            </LinearLayout>
+            <TextView
+                style="@style/Liner"
+                android:layout_marginLeft="@dimen/dp10" />
+
+            <LinearLayout
+                android:id="@+id/ll_device_version"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:background="@drawable/ll_press"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:background="@drawable/host_version" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:maxWidth="@dimen/dp200"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/device_version"
+                    android:textColor="@color/text_color" />
+
+                <TextView
+                    android:id="@+id/tv_device_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/liner" />
+
+            </LinearLayout>
+
+            <TextView style="@style/Liner" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

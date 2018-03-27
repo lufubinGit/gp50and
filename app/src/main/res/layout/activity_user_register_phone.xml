@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/tittleView"
+        style="@style/TittleBar">
+
+        <LinearLayout
+            android:id="@+id/tittleBack"
+            style="@style/Tittle_Left_Iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp25"
+                android:src="@drawable/back" />
+
+            <TextView
+                style="@style/TittleLeftText"
+                android:text="@string/back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tittleText"
+            style="@style/Tittle_Center_Text"
+            android:text="@string/user_registered_phone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="@drawable/edit_text_back"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/dp10"
+            android:src="@drawable/icon_user" />
+
+        <com.host.gp50.app.ui.view.ClearEditText
+            android:id="@+id/etUserName"
+            style="@style/EditText"
+            android:hint="@string/hint_user_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp15"
+        android:background="@drawable/edit_text_back"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/dp10"
+            android:src="@drawable/icon_password" />
+
+        <com.host.gp50.app.ui.view.ClearEditText
+            android:id="@+id/etPassword"
+            style="@style/EditText"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp15"
+        android:background="@drawable/edit_text_back"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/dp10"
+            android:src="@drawable/icon_password" />
+
+        <com.host.gp50.app.ui.view.ClearEditText
+            android:id="@+id/etPassword02"
+            style="@style/EditText"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp15"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_verify_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_back"
+            android:hint="@string/hint_verify"
+            android:maxLines="1"
+            android:inputType="number"
+            android:padding="@dimen/dp10"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_get_verify_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp10"
+            android:background="@drawable/btn_select"
+            android:padding="@dimen/dp10"
+            android:text="@string/user_get_verify_code"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:gravity="center"
+        android:padding="@dimen/dp10"
+        android:text="*注册之后，用户名不能更改" />
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/btn_select"
+        android:text="@string/register"
+        android:textColor="@color/white" />
+</LinearLayout>

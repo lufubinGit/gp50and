@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--圆形view边框颜色-->
+    <color name="dark">#FF222222</color>
+    <color name="light">#FFEEEEEE</color>
+    <color name="background">#F4F5F7</color>
+    <color name="theme">#1f4d98</color>
+    <color name="theme_press">#7F1f4d98</color>
+    <color name="text_color">#333333</color>
+    <color name="text_color_press">#7F333333</color>
+    <color name="text_hint_color">#d0d0d0</color>
+    <color name="white">#ffffff</color>
+    <color name="white_transparent">#66ffffff</color>
+    <color name="item_press">#e5e5e5</color>
+    <color name="liner">#C7C7C7</color>
+    <color name="transparent">#00000000</color>
+    <color name="white_press">#7fffffff</color>
+    <color name="yellow">#ed8f25 </color>
+    <!--<color name="yellow">#FFCF47</color>-->
+    <color name="orange">#FE6D4B</color>
+    <!--<color name="green">#9FD661</color>-->
+    <color name="green">#0b8b43</color>
+    <color name="red">#cd4442</color>
+    <color name="transparent_half">#88000000</color>
+
+    <color name="qmui_config_color_75_pure_black">#C0000000</color>
+</resources>

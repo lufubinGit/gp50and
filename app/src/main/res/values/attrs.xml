@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwitchView">
+        <attr name="hasShadow" format="boolean"/>
+        <attr name="primaryColor" format="color"/>
+        <attr name="primaryColorDark" format="color"/>
+        <attr name="isOpened" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+
+    <!--************ QMUITopBar ***********-->
+    <declare-styleable name="QMUITopBar">
+        <attr name="qmui_topbar_title_gravity" format="enum">
+            <enum name="left_center" value="19"/>
+            <enum name="center" value="17"/>
+        </attr>
+        <attr name="qmui_topbar_need_separator" format="boolean"/>
+        <attr name="qmui_topbar_separator_color" format="color"/>
+        <attr name="qmui_topbar_separator_height" format="dimension"/>
+        <attr name="qmui_topbar_bg_color" format="color"/>
+        <attr name="qmui_topbar_left_back_drawable_id" format="reference"/>
+    </declare-styleable>
+    <attr name="QMUITopBarStyle" format="reference"/>
+
+    <!--**********************************************
+    *                  qmui topbar                   *
+    ***********************************************-->
+    <attr name="qmui_topbar_height" format="dimension"/>
+    <attr name="qmui_topbar_title_color" format="color"/>
+    <attr name="qmui_topbar_title_text_size" format="dimension"/>
+    <attr name="qmui_topbar_title_text_size_with_subtitle" format="dimension"/>
+    <attr name="qmui_topbar_title_margin_horizontal_when_no_btn_aside" format="dimension"/>
+    <attr name="qmui_topbar_subtitle_text_size" format="dimension"/>
+    <attr name="qmui_topbar_subtitle_color" format="color"/>
+    <attr name="qmui_topbar_image_btn_width" format="dimension"/>
+    <attr name="qmui_topbar_image_btn_height" format="dimension"/>
+    <attr name="qmui_topbar_text_btn_padding_horizontal" format="dimension"/>
+    <attr name="qmui_topbar_text_btn_color_state_list" format="reference"/>
+    <attr name="qmui_topbar_text_btn_text_size" format="dimension"/>
+
+    <attr name="qmui_alpha_pressed" format="float"/>
+    <attr name="qmui_alpha_disabled" format="float"/>
+
+    <!-- tips -->
+    <attr name="qmui_tip_dialog_bg" format="reference"/>
+    <attr name="qmui_tip_dialog_min_width" format="dimension"/>
+    <attr name="qmui_tip_dialog_min_height" format="dimension"/>
+    <attr name="qmui_tip_dialog_padding_vertical" format="dimension"/>
+    <attr name="qmui_tip_dialog_padding_horizontal" format="dimension"/>
+    <attr name="qmui_tip_dialog_margin_horizontal" format="dimension"/>
+    <attr name="qmui_content_spacing_horizontal" format="dimension"/>
+
+
+</resources>
